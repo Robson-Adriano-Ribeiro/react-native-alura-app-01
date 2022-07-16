@@ -1,8 +1,8 @@
 import React from "react";
-import { Image, StyleSheet, View } from 'react-native';
+import { Image, StyleSheet, View, Button } from 'react-native';
 import CustomText from '../../../components/CustomText';
 
-export default function Detail({ subTitle, logo, name, description, price }) {
+export default function Detail({ subTitle, logo, name, description, price, button }) {
     return (
         <>
             <View style={style.card} >
@@ -14,6 +14,7 @@ export default function Detail({ subTitle, logo, name, description, price }) {
                 <CustomText style={style.description}> {description}</CustomText>
                 <CustomText style={style.price}>{price}</CustomText>
             </View>
+            <Button title={button} />
         </>
     )
 }
