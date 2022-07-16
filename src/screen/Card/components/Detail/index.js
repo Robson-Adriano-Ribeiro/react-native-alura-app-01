@@ -1,11 +1,12 @@
 import React from "react";
 import { Image, StyleSheet, View, Button } from 'react-native';
 import CustomText from '../../../components/CustomText';
+import { Card } from "./style";
 
 export default function Detail({ subTitle, logo, name, description, price, button }) {
     return (
         <>
-            <View style={style.card} >
+            <Card >
                 <CustomText style={style.subTitle} >{subTitle}</CustomText>
                 <View style={style.farm}>
                     <Image source={logo} style={style.logo} />
@@ -13,17 +14,13 @@ export default function Detail({ subTitle, logo, name, description, price, butto
                 </View>
                 <CustomText style={style.description}> {description}</CustomText>
                 <CustomText style={style.price}>{price}</CustomText>
-            </View>
+            </Card>
             <Button title={button} />
         </>
     )
 }
 
 const style = StyleSheet.create({
-    card: {
-        paddingVertical: 8,
-        paddingHorizontal: 16,
-    },
     subTitle: {
         fontSize: 26,
         lineHeight: 42,
