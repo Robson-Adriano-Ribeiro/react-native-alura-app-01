@@ -1,9 +1,9 @@
 import logo from '../../assets/logo.png';
-import tomate from '../../assets/tomate.png';
-import brocolis from '../../assets/brocolis.png';
-import batata from '../../assets/batata.png';
-import pepino from '../../assets/pepino.png';
-import abobora from '../../assets/abobora.png';
+import tomate from '../../assets/frutas/tomate.png';
+import brocolis from '../../assets/frutas/brocolis.png';
+import batata from '../../assets/frutas/batata.png';
+import pepino from '../../assets/frutas/pepino.png';
+import abobora from '../../assets/frutas/abobora.png';
 
 const cart = {
     header: {
