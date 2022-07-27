@@ -1,8 +1,13 @@
 import React from "react";
-import { Button } from 'react-native';
 import { Card, SubTitle, Farm, ImageFarm, NameFarm, Description, Price } from "./style";
+import { Button, TextButton } from "../../../../components/Button"
 
 export default function Detail({ subTitle, logo, name, description, price, button }) {
+
+    function handleBuy() {
+        console.log('teste')
+    }
+
     return (
         <>
             <Card >
@@ -14,7 +19,9 @@ export default function Detail({ subTitle, logo, name, description, price, butto
                 <Description>{description}</Description>
                 <Price>{price}</Price>
             </Card>
-            <Button title={button} />
+            <Button onPress={handleBuy}>
+                <TextButton >{button}</TextButton>
+            </Button>
         </>
     )
 }

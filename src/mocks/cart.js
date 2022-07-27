@@ -17,7 +17,7 @@ const cart = {
         price: "R$ 40,00",
         button: "Comprar",
     },
-    itens: {
+    items: {
         title: "Itens da cesta",
         list: [
             {
