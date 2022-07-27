@@ -1,11 +1,13 @@
 import React from "react";
-import { ItemView, Name, Image } from "./style";
+import { ItemView, Name, Image, Price } from "./style";
 
-export default function Item({ item: { name, image } }) {
+export default function Item({ item, onPress }) {
+
     return (
-        <ItemView>
-            <Image source={image} />
-            <Name>{name}</Name>
+        <ItemView onPress={onPress}>
+            <Image source={item.image} />
+            <Name>{item.name}</Name>
+            <Price>{item.price}</Price>
         </ItemView>
     )
 }

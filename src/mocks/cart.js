@@ -14,7 +14,6 @@ const cart = {
         name: "Jenny Jack Farm",
         logo: logo,
         description: "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.",
-        price: "R$ 40,00",
         button: "Comprar",
     },
     items: {
@@ -23,22 +22,27 @@ const cart = {
             {
                 name: "Tomate",
                 image: tomate,
+                price: "R$ 10.00",
             },
             {
                 name: "Brócolis",
                 image: brocolis,
+                price: "R$ 20.00",
             },
             {
                 name: "Batata",
                 image: batata,
+                price: "R$ 30.00",
             },
             {
                 name: "Pepino",
                 image: pepino,
+                price: "R$ 40.00",
             },
             {
                 name: "Abóbora",
                 image: abobora,
+                price: "R$ 50.00",
             }
         ]
     }

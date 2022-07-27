@@ -1,12 +1,8 @@
 import React from "react";
-import { Card, SubTitle, Farm, ImageFarm, NameFarm, Description, Price } from "./style";
+import { Card, SubTitle, Farm, ImageFarm, NameFarm, Description, ProductView, ProductText, Image } from "./style";
 import { Button, TextButton } from "../../../../components/Button"
 
-export default function Detail({ subTitle, logo, name, description, price, button }) {
-
-    function handleBuy() {
-        console.log('teste')
-    }
+export default function Detail({ subTitle, logo, name, description, button, productName, price, productImage, onPress }) {
 
     return (
         <>
@@ -16,10 +12,16 @@ export default function Detail({ subTitle, logo, name, description, price, butto
                     <ImageFarm source={logo} />
                     <NameFarm>{name}</NameFarm>
                 </Farm>
+
                 <Description>{description}</Description>
-                <Price>{price}</Price>
+                <ProductView>
+                    {(productImage) ? <Image source={productImage} /> : <></>}
+                    {(productName) ? <ProductText>{productName}</ProductText> : <></>}
+                    <ProductText>{price}</ProductText>
+                </ProductView>
             </Card>
-            <Button onPress={handleBuy}>
+            <></>
+            <Button onPress={onPress}>
                 <TextButton >{button}</TextButton>
             </Button>
         </>

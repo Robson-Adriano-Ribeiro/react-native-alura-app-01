@@ -1,10 +1,10 @@
 import styled from 'styled-components/native'
 
-export const ItemView = styled.View`
+export const ItemView = styled.TouchableOpacity`
     flex-direction: row;
     border-bottom-width: 1px;
     border-bottom-color: #ECECEC;
-    padding-vertical: 16px;
+    padding: 16px;
     align-items: center;
 `
 
@@ -19,6 +19,14 @@ export const Title = styled.Text`
 `
 
 export const Name = styled.Text`
+    font-family: "MontserratRegular"; 
+    color: #464646;
+    font-size: 16px;
+    line-height: 26px;
+    margin-left: 12px;
+`
+
+export const Price = styled.Text`
     font-family: "MontserratRegular"; 
     color: #464646;
     font-size: 16px;

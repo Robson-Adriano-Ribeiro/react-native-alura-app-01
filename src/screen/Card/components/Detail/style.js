@@ -33,10 +33,21 @@ export const Description = styled.Text`
     line-height: 26px;
 `
 
-export const Price = styled.Text`
+export const ProductView = styled.View`
+    flex-direction: row;
+    justify-content: space-between;
+    padding-vertical: 12px;
+`
+export const ProductText = styled.Text`
     font-family: "MontserratBold"; 
     color: #2A9F85;
     font-size: 26px;
     line-height: 42px;
     margin-top: 8px;
 `
+
+export const Image = styled.Image`
+    width: 46px;
+    height: 46px;
+`
+
