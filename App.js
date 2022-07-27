@@ -1,7 +1,7 @@
 import { StatusBar, SafeAreaView, View } from 'react-native';
 import { useFonts, Montserrat_400Regular, Montserrat_700Bold } from '@expo-google-fonts/montserrat';
 import AppLoading from 'expo-app-loading';
-import Cesta from './src/view/Cesta';
+import Card from './src/screen/Card';
 import cartMock from './src/mocks/cart'
 
 export default function App() {
@@ -16,7 +16,7 @@ export default function App() {
     return (
       <SafeAreaView >
         <StatusBar />
-        <Cesta {...cartMock} />
+        <Card {...cartMock} />
       </SafeAreaView>
     );
   }
